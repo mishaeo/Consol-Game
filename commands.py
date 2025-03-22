@@ -22,3 +22,13 @@ def cdf_online_mode(character):
         return character
     else:
         print('The code is not correct!')
+
+def cdf_shadow_mode(shadow_mode):
+    if shadow_mode:
+        safe_mode = False
+        print('Shadow mode is off')
+        return safe_mode
+    else:
+        safe_mode = True
+        print('Shadow mode is on')
+        return safe_mode
