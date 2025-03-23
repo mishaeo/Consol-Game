@@ -22,6 +22,8 @@ while cdf_mode:  # цикл в режиме cdf_mode
         online_mode_characters = commands.cdf_online_mode(online_mode_characters)
     elif command == "cdf.command.shadow.mode": # обработка теневого режима
         cdf_shadow_mode = commands.cdf_shadow_mode(cdf_shadow_mode)
+    elif command == "cdf.command.online.search.mode": # обработка режима поиска онлайн
+        commands.cdf_online_search_mode()
     else:
         print('Unknown command, try again!')  # обработка неизвестной команды
 
