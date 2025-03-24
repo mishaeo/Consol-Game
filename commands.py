@@ -56,9 +56,31 @@ def cdf_online_search_mode():
 
     if command == '861-324-694': # путь к данным ии
         print('Location of files: pflo:89-12-54-23-10')
-    elif command == '758-050-841': # путь к данным
+    elif command == '758-050-841': # путь к данным игрока
         print('Location of files: pflo:12-23-00-19-45')
     else:
         print('File location not found')
+
+def cdf_hack_mode(shadow_mode):
+    command = input('Enter the file to Hack: ')
+
+    for i in range(11):
+        number = random.randint(1, 8)
+        time.sleep(number)
+        if shadow_mode:
+            pass
+        else:
+            chans = random.randint(1, 10)
+            if chans <= 2:
+                print('The AI noticed your actions and disconnected you from the network. You lost.')
+                exit()
+        print('Hack in progress: ', i * 10, '%')
+
+    if command == '89-12-54-23-10': # путь к данным ии
+        print('Data online: NAME:FRILI_VERSION: 6.4.0_PASSWORD:432-128-541-874')
+    elif command == '12-23-00-19-45': # путь к данным
+        print('Data online: NAME:Player1_PASSWORD:178-974-358-016')
+    else:
+        print('File not correct')
 
 
